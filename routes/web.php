@@ -14,3 +14,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home', function () {
+    $name = "mohand";
+    $code = "mohand";
+
+    $test = array(
+        'name' => 'mohand1',
+        'code' => 75019
+    );
+    return view('test', $test);
+});
+
+Route::get('/help', function () {
+    return view('help');
+});
